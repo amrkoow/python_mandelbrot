@@ -12,7 +12,7 @@ import matplotlib
 # Startvorgaben --> sollen später in GUI
 # =============================================================================
 
-imgwidth=400
+imgwidth=200
 aspectratio=1
 imgheight=int(imgwidth/aspectratio)
 
@@ -64,17 +64,16 @@ for x in range (imgwidth):
             
             # Zeichnen
             
-            mycolor1=cmpa(i/maxiter)
-            mycolor2=mycolor1[:3]
-            mycolor=matplotlib.colors.rgb2hex(mycolor2)
-            if i == (maxiter -1):
-                mycolor='#%02x%02x%02x' % (0,0,0)
-            canvas.create_line(x,y, x+1, y+1, fill= mycolor)
+        mycolor1=cmpa(i/maxiter)
+        mycolor2=mycolor1[:3]
+        mycolor=matplotlib.colors.rgb2hex(mycolor2)
+        if i == (maxiter -1):
+            mycolor='#%02x%02x%02x' % (0,0,0)
+        canvas.create_line(x,y, x+1, y+1, fill= mycolor)
+        canvas.pack()
             
 # =============================================================================
 # Bildschirmausgabe
 # =============================================================================
-
-canvas.pack()
 
 canvas.mainloop()
