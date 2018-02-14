@@ -23,3 +23,5 @@ As I am a total newby in terms of programming, most of my code is copied from or
 - getting individual colors from a color map https://stackoverflow.com/questions/25408393/getting-individual-colors-from-a-color-map-in-matplotlib
 - installing python modules (e.g. matplotlib, tkinter,..) https://docs.python.org/3/installing/index.html
 - Learning to Code with Python: Lesson 2.1 Creating Computer Graphics https://www.youtube.com/watch?v=RarMTaALpGM
+
+sddf
