@@ -7,6 +7,7 @@ This is a temporary script file.
 
 from tkinter import *
 import matplotlib
+from matplotlib import cm                    #no idea, why I have to import cm seperately. ran without this line from spyder3 without any promblems, but with "module has no argument 'cm' " in normal command line window or python shell.
 
 # =============================================================================
 # Startvorgaben --> sollen später in GUI
@@ -52,6 +53,7 @@ canvas=Canvas(tk, width=imgwidth, height=imgheight)
 
 for x in range (imgwidth):
     cr=left+x*(right-left)/imgwidth
+    print(x)
     for y in range (imgheight):
         ci=bottom+y*(top-bottom)/imgheight
         c=complex(cr, ci)
