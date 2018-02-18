@@ -14,7 +14,7 @@ import matplotlib
 
 imgwidth=200
 aspectratio=1
-imgheight=int(round((imgwidth/aspectratio),0))
+imgheight=int(round(imgwidth/aspectratio))
 
 lefto=-2.25
 righto= 0.75
